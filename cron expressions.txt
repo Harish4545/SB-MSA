@@ -1,0 +1,17 @@
+At 12 noon every day
+0 12 * * ?
+
+Every five minutes starting at 1 p.m. and ending at 1:55 p.m. and then starting at 6 p.m. and ending at 6:55 p.m., every day:
+0/5 13,18 * * ?
+
+Every minute starting at 1 p.m. and ending at 1:05 p.m., every day:
+0-5 13 * * ?
+
+At 1:15 p.m. and 1:45 p.m. every Tuesday in the month of June:
+15,45 13 ? 6 Tue
+
+At 9:30 a.m. every Monday, Tuesday, Wednesday, Thursday and Friday:
+30 9 ? * MON-FRI
+
+At 9:30 a.m. on the 15th day of every month:
+30 9 15 * ?
