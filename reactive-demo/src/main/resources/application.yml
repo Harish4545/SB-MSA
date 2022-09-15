@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: usersdbnew
+      host: localhost
+      port: 27017
