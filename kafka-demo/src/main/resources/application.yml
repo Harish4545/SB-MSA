@@ -1,0 +1,25 @@
+server:
+ port: 8081
+ 
+spring:
+  kafka:
+   producer:
+     bootstrap-servers: "localhost:9092,localhost:9093"
+     key-serializer: "org.apache.kafka.common.serialization.StringSerializer"
+     value-serializer: "org.springframework.kafka.support.serializer.JsonSerializer"
+   consumer:
+      auto-offset-reset: earliest
+      bootstrap-servers: "localhost:9092"
+      group-id: "spring-boot-kafka-consumer4"
+      value-deserializer: "org.springframework.kafka.support.serializer.ErrorHandlingDeserializer"
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "com.training.model"
+          deserializer:
+            value:
+              delegate:
+                class :   "org.springframework.kafka.support.serializer.JsonDeserializer"  
+     
+     
