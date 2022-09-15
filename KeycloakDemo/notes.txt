@@ -1,0 +1,2 @@
+standalone.bat -Djboss.socket.binding.port-offset=100
+http://localhost:8180/auth

@@ -1,0 +1,6 @@
+keycloak:
+  realm: training
+  auth-server-url: http://localhost:8180/auth
+  resource: sb_project_kc
+  public-client: true
+  bearer-only: true

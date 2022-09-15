@@ -1,0 +1,8 @@
+spring.cloud.stream:
+  function:
+    definition: movieProcessor
+  bindings:
+    movieProcessor-in-0:
+      destination: kafkamovie1
+    movieProcessor-out-0:
+      destination: movie-out-topic
